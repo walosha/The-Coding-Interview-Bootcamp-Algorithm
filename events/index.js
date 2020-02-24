@@ -16,7 +16,7 @@ class Events {
     }
   }
 
-  // Trigger all callbacks ass
+  // Trigger all callbacks associated
   // with a given eventName
   trigger(eventName) {
     if (this.event[eventName]) {
