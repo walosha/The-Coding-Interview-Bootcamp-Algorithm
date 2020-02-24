@@ -26,7 +26,7 @@ class Events {
     }
   }
   // Remove all event handlers associated
-  // with the given eventName
+  // with the given eventN
   off(eventName) {
     if (this.event[eventName]) {
       delete this.event[eventName];
