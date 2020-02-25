@@ -11,18 +11,15 @@ function maxChar(str) {
   var maxChar = "";
 
   str.split("").forEach(el => {
-    if (!charMap[el]) {
-      charMap[el] = 1;
-    } else {
-      charMap[el]++;
-    }
+    !charMap[el] ? (charMap[el] = 1) : charMap[el]++;
   });
 
-  for (var char in charMap) {
-    if (charMap[char] > max) {
-      max = charMap[char];
-      maxChar = char;
-    }
+  for (let char in charMap) {
+    charMap[char] > max
+      ? (max = charMap[char])
+        ? (maxChar = char)
+        : null
+      : null;
   }
 
   return maxChar;
